@@ -1,8 +1,17 @@
-Create a project - dotnet new webapi -o api
-Run a project - dotnet watch run
-Extensions 
+1. Create a project - dotnet new webapi -o api
+2. Run a project - dotnet watch run
+3. Install Extensions 
 	NuGet Gallery Extension
 	.NET Extension Pack
 	.NET Install Tool
 	C# Dev Kit
 	C# Extensions - JosKreativ
+4. Create a Model folder inside main folder
+5. Create 2 classes comment and stock 
+6. type 'prop' to create a property
+7. Map and create model
+8. ORM - Entity Framework - Object Relational Mapper
+9. Microsoft Entity Framework - Install Nugets
+	Microsoft.EntityFrameworkCore.SqlServer
+	Microsoft.EntityFrameworkCore.Tools
+	Microsoft.EntityFrameworkCore.Design
