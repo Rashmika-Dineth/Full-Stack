@@ -1,1 +1,8 @@
-dotnet new webapi -o api
+Create a project - dotnet new webapi -o api
+Run a project - dotnet watch run
+Extensions 
+	NuGet Gallery Extension
+	.NET Extension Pack
+	.NET Install Tool
+	C# Dev Kit
+	C# Extensions - JosKreativ
