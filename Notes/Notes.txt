@@ -15,3 +15,29 @@
 	Microsoft.EntityFrameworkCore.SqlServer
 	Microsoft.EntityFrameworkCore.Tools
 	Microsoft.EntityFrameworkCore.Design
+
+10. ApplicationDBContext.cs
+    public class ApplicationDBContext : DbContext
+    {
+        public ApplicationDBContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
+        {
+            
+        }
+
+        public DbSet<Stock> Stock {get;set;}
+        public DbSet<Comment> Comment {get;set;}
+    }
+
+11. Program.cs
+builder.Services.AddDbContext<ApplicationDBContext>(options => {
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+12. AppSettings.json
+  "ConnectionStrings":{
+    "DefaultConnection": "server=localhost;database=FinnBank;trusted_connection=true;;Encrypt=false;TrustServerCertificate=true"
+  },
+
+13. 
+dotnet ef migrations add Init
+dotnet ef database update
